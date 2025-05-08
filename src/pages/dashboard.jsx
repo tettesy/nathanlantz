@@ -3,6 +3,7 @@ import {
   DollarSign,
   Menu,
   X,
+  Upload,
   Download,
   Copy,
   Check,
@@ -188,6 +189,7 @@ export default function Dashboard() {
                 onClick={() => openModal("deposit")}
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
               >
+                <Upload className="mr-2 h-4 w-4" />
                 Deposit
               </button>
               <button
@@ -456,6 +458,17 @@ export default function Dashboard() {
                             .join("")}
                         </div>
                       )}
+                      <label
+                        htmlFor="profile-upload"
+                        className="absolute bottom-0 right-0 bg-blue-600 rounded-full p-2 text-white cursor-pointer shadow-md hover:bg-blue-700"
+                      >
+                        <Upload className="h-4 w-4" />
+                        <input
+                          id="profile-upload"
+                          type="file"
+                          className="hidden"
+                        />
+                      </label>
                     </div>
                   </div>
                   <div className="sm:ml-6 flex-1">
