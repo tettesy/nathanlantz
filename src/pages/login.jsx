@@ -8,7 +8,7 @@ export default function LoginPage({ onLogin }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const validEmail = "marcus";
+  const validEmail = "marcusgarvey@gmail.com";
   const validPassword = "marcus$";
 
   const handleSubmit = (e) => {
@@ -52,14 +52,14 @@ export default function LoginPage({ onLogin }) {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Username
+              Email
             </label>
             <input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full mt-1 px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
-              placeholder="Enter your username"
+              placeholder="Enter your email"
               required
             />
           </div>
