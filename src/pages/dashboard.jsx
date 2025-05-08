@@ -57,7 +57,7 @@ export default function Dashboard() {
   const userName = "Aliyah Eastham";
   const btcWalletAddress = "bc1qr0j4swu6n56jakfawe09rjumt0t4wzhgzul3ep";
   const walletRef = useRef(null);
-  const balance = 42000;
+  const balance = 42170;
   const userEmail = "aliyaheastham223@gmail.com";
   const profileImageUrl = profileImg;
   const MINIMUM_WITHDRAWAL = 43900;
