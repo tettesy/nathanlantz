@@ -8,8 +8,8 @@ export default function LoginPage({ onLogin }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const validEmail = "aliyaheastham223@gmail.com";
-  const validPassword = "Aliyah223$";
+  const validEmail = "marcus";
+  const validPassword = "marcus$";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -52,7 +52,7 @@ export default function LoginPage({ onLogin }) {
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div>
             <label className="block text-sm font-medium text-gray-700">
-              Email address
+              Username
             </label>
             <input
               type="email"

