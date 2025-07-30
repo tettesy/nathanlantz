@@ -8,8 +8,8 @@ export default function LoginPage({ onLogin }) {
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
-  const validEmail = "marcusgarvey@gmail.com";
-  const validPassword = "marcus$";
+  const validEmail = "nathanlantz@portfolio.com";
+  const validPassword = "Nathan002211";
 
   const handleSubmit = (e) => {
     e.preventDefault();
